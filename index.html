@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry... 💔</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <audio id="bg-music" src="love-song.mp3.mp3.mp3" autoplay loop></audio>
+
+    
+
+    <!-- Sorry Message First -->
+    <div id="sorry-screen">
+    <h1 class="fade-in">I'm really sorry...</h1>
+    <p> 😢💔</p>
+    </div>
+
+    <!-- Proposal Screen (Hidden at First) -->
+    <div id="proposal-screen" class="hidden">
+        <h1>Will You Be My Valentine? ❤️</h1>
+        <img src="https://media.tenor.com/TgPZv19i4YcAAAAM/iyah.gif" class="cute-img">
+        <p id="countdown"></p>
+
+        <div class="buttons">
+            <button id="yesBtn" class="pulse">Yes! ❤️</button>
+            <button id="noBtn" class="bounce">No 😢</button>
+        </div>
+
+        <p id="message" class="hidden fade-in"> I love you my baby doll❤️💕🐻</p>
+        <p id="sorry-message" class="hidden fade-in">Aww, I'm Sorry 😞💔</p>
+    </div>
+
+    <button id="yes-Btn" onclick="showLoveMessage()">Yes!</button>
+    <p id="love-message" style="display: none; font-size: 20px; color: red; ">I love you too❤️💕</p>
+
+    <!-- Falling Petals Animation -->
+    <script src="script.js"></script>
+</body>
+</html>
